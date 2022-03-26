@@ -1,30 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { StyleSheet, Text, View } from "react-native";
+import useApi from './../hooks/useApi';
 
-const key = 'key=930279b0'; // usually in .env or hidden
+const key = 'key=930279b0'; // usually in .env
 // should come back and allow for dynamic calls with different inputs for page/count
 const baseURL = `https://my.api.mockaroo.com/users.json?page=1&count=3&${key}`;
 
 
 export default function TabTwoScreen() {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-
-    const apiRequest = async () => {
-      try {
-        const res = await axios.get(baseURL);
-        console.log(res.data.entries)
-        setUsers(res.data.entries);
-      } catch (error) {
-        console.log(error)
-      }
-    };
-    apiRequest();
-  }, [])
-
-  if (!users.length) return <Text> Loading...</Text>
+  // useState to hold the array of users information
+  const { loading, data } = useApi(baseURL);
+  console.log(loading, data)
+  if (loading) return <Text> Loading...</Text>
 
   return (
     <View style={styles.container}>
@@ -33,7 +20,7 @@ export default function TabTwoScreen() {
 
       {/* user component to map over */}
 
-      {users.map((user) => (
+      {data.entries.map((user) => (
         <Text style={styles.text} key={user.id}>{user.email}</Text>
       ))
       }
