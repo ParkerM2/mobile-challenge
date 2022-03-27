@@ -39,7 +39,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "jest": "^27.5.1",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^17.0.1"
   },
   "scripts": {
     "start": "expo start",
