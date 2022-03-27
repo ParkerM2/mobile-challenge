@@ -35,19 +35,14 @@ git clone https://github.com/ParkerM2/mobile-challenge.git
 
 Install node modules:
 ```
-
  npm install
 ```
-
 To run, use: 
 ```
-
 npm start
 ```
-
 To test, use:
 ```
-
  npm test
 ```
 ## Screenshots
