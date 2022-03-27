@@ -21,7 +21,8 @@ const useApi = (url) => {
                 setData(json)
                 setLoading(false);
                 var end = now();
-                console.log(`=== API CALL ${(start.toFixed(1) - end.toFixed(1)) / 1000} seconds ===`);
+                let result = (start - end) / 1000
+                console.log(`=== API CALL ${result.toFixed(1)}  seconds ===`);
             }).catch(err => {
                 setError(err);
             })
