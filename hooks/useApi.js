@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
+let now = require("performance-now")
 
 const useApi = (url) => {
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
 
+    
+
     const fetchApi = () => {
         // grab data from api
+        var start = now();
+        
+        try {
         fetch(url)
             .then(response => {
                 return response.json();
@@ -14,13 +20,22 @@ const useApi = (url) => {
             .then(json => {
                 setData(json)
                 setLoading(false);
+                var end = now();
+                console.log(`=== API CALL ${(start.toFixed(1) - end.toFixed(1)) / 1000} seconds ===`);
             }).catch(err => {
                 setError(err);
             })
+        } catch (err) {
+            setError(err)
+        }
+
     };
+
+ 
 
     useEffect(() => {
         setLoading(true)
+        
         fetchApi();
     }, [url]);
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ScrollView, StyleSheet, Text, View, ActivityIndicator, FlatList } from "react-native";
+import { StyleSheet, Text, View, ActivityIndicator, FlatList } from "react-native";
 import { Button } from 'react-native-paper';
 import UserCard from '../components/UserCard';
 import useApi from './../hooks/useApi';
@@ -16,7 +16,7 @@ export default function TabTwoScreen() {
   const { loading, data, error } = useApi(baseURL);
 
   if (loading) return <View style={styles.loader}><ActivityIndicator color="#8a2be2" size="large" /></View>
-  if (error) return <Text> Error Found: {error.message} </Text>
+  if (error) return <Text> Error Found: {error} </Text>
 
   return (
     <View style={styles.container}>
@@ -25,8 +25,7 @@ export default function TabTwoScreen() {
       {/* Switched To a Flat List to improve performance of the application */}
       {/* docs : https://reactnative.dev/docs/optimizing-flatlist-configuration#:~:text=Pros%3A%20Setting%20a%20bigger%20number,%2C%20like%20presses%2C%20hurting%20responsiveness. */}
           <FlatList
-            initialNumToRender={10}
-            style={{ height: 100 }}
+            initialNumToRender={5}
             data={data.entries}
             keyExtractor={item=>`${item.id}`}
             renderItem={({ item }) => {
@@ -38,7 +37,8 @@ export default function TabTwoScreen() {
       <View style={styles.row}>
         <View style={styles.buttonContainer}>
           <Button
-            compact={true}
+            compact
+            color='#8a2be2'
             mode="contained"
             onPress={() => setPage((val) => val >= 2 ? val - 1 : null)}
             disabled={page >= 2 ? false : true}
@@ -48,7 +48,8 @@ export default function TabTwoScreen() {
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            compact={true}
+            compact
+            color='#8a2be2'
             mode="contained"
             onPress={() => setPage((val) => val + 1)}
           >
