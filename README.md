@@ -28,10 +28,21 @@ Project is created with:
 ## Setup
 To run this project:
 
+Run: 
 ```
-Run: git clone https://github.com/ParkerM2/mobile-challenge.git
-Install node modules: npm install
-To run use: npm start or expo start
+git clone https://github.com/ParkerM2/mobile-challenge.git
+```
+Install node modules:
+```
+ npm install
+ ```
+To run, use: 
+```
+npm start
+```
+To test, use:
+```
+ npm test
 ```
 ## Screenshots
 
