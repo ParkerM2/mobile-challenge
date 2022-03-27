@@ -18,16 +18,16 @@ export default function TabOneScreen() {
             {
               title: 'Requirements',
               data: [
-                'Get it to work with bare minimum UI and backend integration.',
+                'Get it to work with bare minimum UI',
                 'The code must execute.',
-                'Try to limit time investment to 30-60 mins max for the initial “get it to work approach”.',
-                'Share the git repo link that contains your code and readme with steps to execute.'
+                'Try to limit time investment to 30-60 mins.',
+                'Share the git repo link'
               ],
             }
             ,{
               title: 'Nice to Haves',
               data: [
-                'Step-by-step commits : Start coding and make sure to commit logically.',
+                'Step-by-step commits',
                 'Tests',
                 'Performance improvements',
                 'Killer readme',
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 35,
     fontWeight: "bold",
     padding: 20,
+    color: '#8a2be2',
   },
   descriptionTitle: {
     fontSize: 20,
@@ -72,13 +73,14 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
   },
   sectionHeader: {
+    color: 'white',
     paddingTop: 2,
     paddingLeft: 10,
     paddingRight: 10,
     paddingBottom: 2,
     fontSize: 16,
     fontWeight: 'bold',
-    backgroundColor: 'lightblue',
+    backgroundColor: '#8a2be2',
     alignSelf: 'center',
   },
     item: {

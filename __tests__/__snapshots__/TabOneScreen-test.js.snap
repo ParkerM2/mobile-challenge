@@ -6,30 +6,411 @@ exports[`renders correctly 1`] = `
     Object {
       "alignItems": "center",
       "flex": 1,
-      "justifyContent": "center",
     }
   }
 >
   <Text
     style={
       Object {
-        "fontSize": 20,
+        "fontSize": 35,
         "fontWeight": "bold",
+        "padding": 20,
       }
     }
   >
-    Home
+    EstateSpace
   </Text>
   <View
-    darkColor="rgba(255,255,255,0.1)"
-    lightColor="#eee"
     style={
       Object {
-        "height": 1,
-        "marginVertical": 30,
-        "width": "80%",
+        "alignItems": "center",
+        "flex": 1,
       }
     }
-  />
+  >
+    <Text
+      style={
+        Object {
+          "borderBottomColor": "black",
+          "borderBottomWidth": 2,
+          "fontSize": 20,
+          "marginTop": 20,
+        }
+      }
+    >
+      Mobile Dev Challenge
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 4,
+        "marginBottom": 20,
+      }
+    }
+  >
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "data": Array [
+              "Get it to work with bare minimum UI and backend integration.",
+              "The code must execute.",
+              "Try to limit time investment to 30-60 mins max for the initial “get it to work approach”.",
+              "Share the git repo link that contains your code and readme with steps to execute.",
+            ],
+            "title": "Requirements",
+          },
+          Object {
+            "data": Array [
+              "Step-by-step commits : Start coding and make sure to commit logically.",
+              "Tests",
+              "Performance improvements",
+              "Killer readme",
+            ],
+            "title": "Nice to Haves",
+          },
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={
+        Array [
+          0,
+          6,
+        ]
+      }
+      updateCellsBatchingPeriod={50}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "lightblue",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "paddingBottom": 2,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 2,
+              }
+            }
+          >
+            Requirements
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "height": 44,
+                "padding": 10,
+              }
+            }
+          >
+            Get it to work with bare minimum UI and backend integration.
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "height": 44,
+                "padding": 10,
+              }
+            }
+          >
+            The code must execute.
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "height": 44,
+                "padding": 10,
+              }
+            }
+          >
+            Try to limit time investment to 30-60 mins max for the initial “get it to work approach”.
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "height": 44,
+                "padding": 10,
+              }
+            }
+          >
+            Share the git repo link that contains your code and readme with steps to execute.
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        />
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "lightblue",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "paddingBottom": 2,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 2,
+              }
+            }
+          >
+            Nice to Haves
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "height": 44,
+                "padding": 10,
+              }
+            }
+          >
+            Step-by-step commits : Start coding and make sure to commit logically.
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "height": 44,
+                "padding": 10,
+              }
+            }
+          >
+            Tests
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "height": 44,
+                "padding": 10,
+              }
+            }
+          >
+            Performance improvements
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 0,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
+
+exports[`renders correctly 2`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "borderBottomColor": "black",
+        "borderBottomWidth": 3,
+        "fontSize": 30,
+        "fontWeight": "bold",
+        "marginTop": 5,
+      }
+    }
+  >
+    Current User List
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 15,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      UserCard
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.12)",
+            "height": 0.5,
+          },
+          undefined,
+          undefined,
+        ]
+      }
+    />
+    <Text>
+       
+      Thorny
+       
+      Clayborn
+       
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 15,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      UserCard
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.12)",
+            "height": 0.5,
+          },
+          undefined,
+          undefined,
+        ]
+      }
+    />
+    <Text>
+       
+      Layney
+       
+      Juan
+       
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 15,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      UserCard
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.12)",
+            "height": 0.5,
+          },
+          undefined,
+          undefined,
+        ]
+      }
+    />
+    <Text>
+       
+      Ulrich
+       
+      Lepper
+       
+    </Text>
+  </View>
 </View>
 `;

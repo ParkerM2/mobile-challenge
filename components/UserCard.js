@@ -1,31 +1,42 @@
 import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
-import { Divider } from 'react-native-paper';
+import { Divider, Avatar, Card, IconButton, Title, Paragraph } from 'react-native-paper';
 
 
-const UserCard = ({ props }) => {
-    const { id, email, gender, role, name } = props;
+const UserCard = (item) => {
+    const { id, email, gender, role, name } = item;
+    console.log('usercard', item, id)
 
     return (
-        <View key={id} style={styles.container}>
-            <Text style={styles.title}>UserCard</Text>
+        <Card style={styles.card}>
+            <Card.Title
+                title={`${name.firstName} ${name.lastName}`}
+                subtitle={role}
+                left={(props) => <Avatar.Icon {...props} icon="account-circle" />}
+
+            />
             <Divider />
-            <Text style={styles.name}> {name.firstName} {name.lastName} </Text> 
-        </View>
+            <Card.Content style={styles.content}>
+                <Paragraph>ID: {id}</Paragraph>
+                <Paragraph>Email: {email}</Paragraph>
+                <Paragraph>Gender: {gender}</Paragraph>
+            </Card.Content>
+        </Card>
+        
     );
-};
+}
 
 export default UserCard;
 
 const styles = StyleSheet.create({
     container: {
-        justifyContent: 'center',
         flex: 1,
-        padding: 10,
-        alignItems: 'center'
+        padding: 2,
     },
-    title: {
-        fontSize: 15,
-        fontWeight: "bold",
+    card: {
+        margin: 10
     },
+    content: {
+        paddingTop: 10,
+    }
 });
