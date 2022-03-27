@@ -11,7 +11,7 @@
     - [User Page](#user-page)
 
 ## General info
-This Challenge was to perform a API request and display the information on a React Native platform.
+This Challenge was to perform an API request and display the information on a React Native platform.
 
 [API Information](https://github.com/GriffinGroupGlobal/mobile-challenge/blob/master/user.md)
 	
