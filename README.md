@@ -33,9 +33,10 @@ Run:
 git clone https://github.com/ParkerM2/mobile-challenge.git
 ```
 
-Install node modules:
+To install node modules:
 ```
- npm install
+cd mobile-challenge/
+npm install
 ```
 To run, use: 
 ```
