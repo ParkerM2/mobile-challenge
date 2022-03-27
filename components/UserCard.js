@@ -5,14 +5,13 @@ import { Divider, Avatar, Card, IconButton, Title, Paragraph } from 'react-nativ
 
 const UserCard = (item) => {
     const { id, email, gender, role, name } = item;
-    console.log('usercard', item, id)
 
     return (
         <Card style={styles.card}>
             <Card.Title
                 title={`${name.firstName} ${name.lastName}`}
                 subtitle={role}
-                left={(props) => <Avatar.Icon {...props} icon="account-circle" />}
+                left={(props) => <Avatar.Icon style={{backgroundColor: '#8a2be2'}} {...props} icon="account-circle" />}
 
             />
             <Divider />
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
         padding: 2,
     },
     card: {
-        margin: 10
+        margin: 10,
     },
     content: {
         paddingTop: 10,
