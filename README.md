@@ -53,4 +53,4 @@ To test, use:
 
 ### User Page
 ![UserPage](assets/images/codingChallengeScreenshot.png | width=200)
-
+<img src="assets/images/codingChallengeScreenshot.png" width="100" height="100">
