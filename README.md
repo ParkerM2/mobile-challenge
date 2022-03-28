@@ -52,4 +52,4 @@ To test, use:
 <img src="assets/images/homeScreenShot.png" width="400" height="800">
 
 ### User Page
-<img src="assets/images/codingChallengeScreenshot.png" width="400" height="800">
+<img src="assets/images/codingChallengeScreenshot.png" width="400" height="600">
