@@ -49,7 +49,7 @@ To test, use:
 ## Screenshots
 
 ### Home Screen
-<img src="assets/images/homeScreenShot.png" width="400" height="800">
+<img src="assets/images/homeScreenShot.png" width="200" height="400">
 
 ### User Page
-<img src="assets/images/codingChallengeScreenshot.png" width="400" height="600">
+<img src="assets/images/codingChallengeScreenshot.png" width="200" height="400">
