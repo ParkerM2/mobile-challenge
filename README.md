@@ -49,8 +49,7 @@ To test, use:
 ## Screenshots
 
 ### Home Screen
-![HomeScreen](assets/images/homeScreenShot.png | width=100)
+<img src="assets/images/homeScreenShot.png" width="400" height="800">
 
 ### User Page
-![UserPage](assets/images/codingChallengeScreenshot.png | width=200)
-<img src="assets/images/codingChallengeScreenshot.png" width="100" height="100">
+<img src="assets/images/codingChallengeScreenshot.png" width="400" height="800">
